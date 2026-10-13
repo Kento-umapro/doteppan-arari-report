@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>どてっぱん 高粗利商品 戦略レポート</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1A1712;--cream:#F7F3E6;--paper:#FFFDF7;--amber:#F2A32C;--sauce:#B5341F;--muted:#5A5246;--line:#1A1712;--dark2:#2A251E;--soft:#D9D0BC}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--cream);color:var(--ink);font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;line-height:1.7;font-size:16px}
+.r{font-family:"M PLUS Rounded 1c","Hiragino Sans",sans-serif;font-weight:800}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.hero{background:var(--ink);color:var(--cream);padding:64px 0 56px}
+.chip{display:inline-block;background:var(--amber);color:var(--ink);font-weight:700;font-size:14px;padding:4px 14px;border-radius:6px}
+.hero h1{font-size:clamp(32px,6vw,56px);line-height:1.2;margin:20px 0 16px}
+.hero p.lead{font-size:clamp(17px,2.4vw,22px);color:var(--soft)}
+.hero p.src{font-size:13px;color:#B8AE98;margin-top:28px}
+nav.toc{background:var(--paper);border-bottom:3px solid var(--ink);position:sticky;top:0;z-index:5}
+nav.toc .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:10px;padding-bottom:10px;white-space:nowrap}
+nav.toc a{font-size:13px;color:var(--ink);text-decoration:none;padding:4px 10px;border-radius:6px;background:var(--cream);font-weight:700}
+section{padding:56px 0;border-bottom:1px solid #E3DAC4}
+section.dark{background:var(--ink);color:var(--cream);border-bottom:none}
+section.amber{background:var(--amber);border-bottom:none}
+.eyebrow{font-size:14px;font-weight:700;color:var(--sauce);letter-spacing:.05em}
+.dark .eyebrow{color:var(--amber)}.amber .eyebrow{color:var(--ink)}
+h2{font-size:clamp(24px,4vw,36px);line-height:1.3;margin:8px 0 28px;display:inline-block;border-bottom:6px solid var(--amber);padding-bottom:4px}
+.dark h2{border-color:var(--amber)}.amber h2{border-color:var(--ink)}
+.grid{display:grid;gap:16px}
+.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:760px){.g3,.g2{grid-template-columns:1fr}}
+.card{background:var(--paper);border:3px solid var(--line);border-radius:12px;padding:22px}
+.card.k{background:var(--ink);color:var(--cream)}
+.card.a{background:var(--amber)}
+.card.d{background:var(--dark2);border:none;border-top:6px solid var(--amber);color:var(--cream)}
+.card h3{font-size:20px;line-height:1.4;margin-bottom:8px}
+.big{font-size:clamp(34px,6vw,52px);line-height:1.1}
+.unit{color:var(--muted);font-size:.55em}
+.k .unit{color:var(--soft)}
+.label{font-size:14px;color:var(--muted)}.k .label,.d .label{color:var(--soft)}
+.num{font-size:44px;color:var(--amber);line-height:1}
+.red{color:var(--sauce)}
+.note{font-size:13px;color:#7A7060;margin-top:20px}
+.dark .note{color:#9A907C}.amber .note{color:var(--ink)}
+ul.plain{list-style:none}ul.plain li{padding-left:1em;text-indent:-1em}ul.plain li::before{content:"・"}
+.todo{margin-top:24px;background:var(--paper);border-left:8px solid var(--amber);border-radius:8px;padding:16px 20px;font-size:17px}
+.todo b{color:var(--sauce)}
+.tbl{overflow-x:auto;border:3px solid var(--line);border-radius:12px;background:var(--paper)}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:15px}
+th{background:var(--ink);color:var(--cream);text-align:left;padding:10px 12px;font-weight:700;white-space:nowrap}
+td{padding:10px 12px;border-top:1px solid #E3DAC4}
+td.n,th.n{text-align:right;white-space:nowrap}
+tr.sum td{background:var(--amber);font-weight:700}
+.quad{display:grid;grid-template-columns:auto 1fr 1fr;grid-template-rows:1fr 1fr auto;gap:12px}
+.quad .axis-y{grid-row:1/3;writing-mode:vertical-rl;text-align:center;font-weight:700;font-size:14px;color:var(--muted)}
+.quad .axis-x{grid-column:2/4;text-align:center;font-weight:700;font-size:14px;color:var(--muted)}
+.quad .card{display:flex;flex-direction:column;gap:6px}
+.quad .tag{font-size:13px;font-weight:700}
+@media(max-width:760px){.quad{grid-template-columns:1fr;grid-template-rows:none}.quad .axis-y,.quad .axis-x{display:none}}
+footer{background:var(--ink);color:#9A907C;font-size:13px;padding:28px 0}
+</style>
+</head>
+<body>
+
+<header class="hero">
+<div class="wrap">
+<span class="chip">2026年10月　社内資料</span>
+<h1 class="r">どてっぱん<br>高粗利商品 戦略レポート</h1>
+<p class="lead">出数と1品あたり粗利で、<br>「もっと売るべき商品」を決める。</p>
+<p class="src">株式会社うまプロ／事業開発本部　｜　出典：Dinii POS 出数集計（2026/7/1〜9/12・10/12）</p>
+</div>
+</header>
+
+<nav class="toc"><div class="wrap">
+<a href="#premise">前提</a><a href="#conclusion">結論</a><a href="#matrix">分析の方法</a><a href="#stars">稼ぎ頭</a><a href="#concentration">粗利の集中</a><a href="#drinks">ドリンク</a><a href="#puzzle">隠れ高粗利</a><a href="#horse">人気だが薄利</a><a href="#topping">トッピング</a><a href="#impact">効果試算</a><a href="#next">次の一手</a>
+</div></nav>
+
+<section id="premise"><div class="wrap">
+<p class="eyebrow">01　分析の前提</p>
+<h2 class="r">9店・73日分の出数から、<br>粗利を商品別に出した</h2>
+<div class="grid g3">
+<div class="card"><p class="label">対象売上（税込）</p><p class="big r">1億1,126<span class="unit">万円</span></p></div>
+<div class="card"><p class="label">粗利額</p><p class="big r">8,479<span class="unit">万円</span></p></div>
+<div class="card k"><p class="label">粗利率</p><p class="big r" style="color:var(--amber)">76.2%</p></div>
+</div>
+<ul class="plain" style="margin-top:24px">
+<li>期間：2026年7月1日〜9月12日＋10月12日（取得できた73日分）</li>
+<li>店舗：原価が登録されている9店。<br>向ヶ丘遊園・登戸は原価未登録のため対象外。</li>
+<li>粗利＝税込売価−Dinii登録原価。<br>飲み放題で出た0円ドリンクは除いた。</li>
+</ul>
+<p class="note">原価はDiniiの登録値です。ロス・廃棄・人件費は含みません。</p>
+</div></section>
+
+<section id="conclusion" class="dark"><div class="wrap">
+<p class="eyebrow">02　結論</p>
+<h2 class="r">粗利を伸ばす打ち手は、3つ。</h2>
+<div class="grid g3">
+<div class="card d"><p class="num r">1</p><h3 class="r" style="margin-top:10px">ドリンクを「メガ」へ</h3><p>角ハイ・レモンサワーは、<br>メガにすると1杯の粗利が<br>245〜389円増える。</p></div>
+<div class="card d"><p class="num r">2</p><h3 class="r" style="margin-top:10px">隠れた高粗利を推す</h3><p>和牛ステーキ・ぜいたく海鮮は、<br>1品で2,000円超の粗利。<br>でも出数は少ない。</p></div>
+<div class="card d"><p class="num r">3</p><h3 class="r" style="margin-top:10px">薄利の人気商品を手直し</h3><p>焼きそばは粗利率58.8%。<br>主力料理の中で一番低い。<br>原価か価格を見直す。</p></div>
+</div>
+<p class="note">試算では、3つ合わせて9店で月およそ27万円の粗利増（<a href="#impact" style="color:var(--amber)">効果試算</a>）。</p>
+</div></section>
+
+<section id="matrix"><div class="wrap">
+<p class="eyebrow">03　分析の方法</p>
+<h2 class="r">出数と1品あたり粗利で、4つに分ける</h2>
+<div class="quad">
+<div class="axis-y">1品あたり粗利 ↑ 厚い</div>
+<div class="card"><span class="tag red">隠れ高粗利</span><h3 class="r">あまり出ない × 粗利が厚い</h3><p>国産和牛ステーキ・ぜいたく海鮮もんじゃ</p><p><b>→ おすすめ札と声かけで、出数を増やす。</b></p></div>
+<div class="card a"><span class="tag">稼ぎ頭</span><h3 class="r">よく出る × 粗利が厚い</h3><p>ど定番明太もちチーズ・海鮮スペシャル玉・メガ角ハイ</p><p><b>→ 品切れさせない。看板として守る。</b></p></div>
+<div class="card" style="background:#E9E2D0"><span class="tag">見直し候補</span><h3 class="r">あまり出ない × 粗利が薄い</h3><p>ツナサラダ・本日のアヒージョ・キムチ3種</p><p><b>→ メニュー表の場所を譲る。入替えを検討。</b></p></div>
+<div class="card"><span class="tag red">人気だが薄利</span><h3 class="r">よく出る × 粗利が薄い</h3><p>特選豚玉・焼きそば・生ビール</p><p><b>→ トッピングやメガで、1回の粗利を上げる。</b></p></div>
+<div class="axis-x">出数 → 多い</div>
+</div>
+<p class="note">境目は中央値。フード（101品）：出数419・粗利858円。ドリンク（52品）：出数627・粗利537円。<br>73日で100食以上の商品が対象。</p>
+</div></section>
+
+<section id="stars"><div class="wrap">
+<p class="eyebrow">04　稼ぎ頭（フード）</p>
+<h2 class="r">稼ぎ頭は、もんじゃとお好み焼きの看板</h2>
+<div class="tbl"><table>
+<tr><th>商品</th><th class="n">出数</th><th class="n">売価</th><th class="n">1品粗利</th><th class="n">粗利率</th><th class="n">粗利額</th></tr>
+<tr><td>ど定番明太もちチーズベビースター</td><td class="n">3,658</td><td class="n">2,068円</td><td class="n">1,700円</td><td class="n">82%</td><td class="n">622万円</td></tr>
+<tr><td>（ハーフ）ど定番明太もちチーズ</td><td class="n">3,441</td><td class="n">1,298円</td><td class="n">1,082円</td><td class="n">83%</td><td class="n">372万円</td></tr>
+<tr><td>海鮮スペシャル玉</td><td class="n">1,128</td><td class="n">1,801円</td><td class="n">1,295円</td><td class="n">72%</td><td class="n">146万円</td></tr>
+<tr><td>（ハーフ）イカ墨クリームリゾット</td><td class="n">1,272</td><td class="n">1,408円</td><td class="n">1,117円</td><td class="n">79%</td><td class="n">142万円</td></tr>
+<tr><td>明太もちチーズ</td><td class="n">848</td><td class="n">1,958円</td><td class="n">1,615円</td><td class="n">83%</td><td class="n">137万円</td></tr>
+<tr><td>（ハーフ）岩のりクリーム</td><td class="n">1,479</td><td class="n">1,298円</td><td class="n">924円</td><td class="n">71%</td><td class="n">137万円</td></tr>
+</table></div>
+<div class="todo"><b>やること：</b>この6品は、品切れ・提供遅れを絶対に出さない。<br>仕込みの優先順位を一番上に置く。</div>
+<p class="note">9店・73日の合計。売価・原価は期間中の平均（税込）。</p>
+</div></section>
+
+<section id="concentration" class="amber"><div class="wrap">
+<p class="eyebrow">05　粗利の集中</p>
+<p class="r" style="font-size:clamp(72px,14vw,140px);line-height:1;margin:12px 0">11.7%</p>
+<p style="font-size:20px;font-weight:700">ど定番明太もちチーズ（フル＋ハーフ）だけで、<br>全粗利の1割強を稼いでいる。</p>
+<div class="grid g3" style="margin-top:28px">
+<div class="card k"><p class="label">上位10品で</p><p class="big r" style="color:var(--amber)">34.3%</p></div>
+<div class="card k"><p class="label">上位20品で</p><p class="big r" style="color:var(--amber)">47.3%</p></div>
+<div class="card k"><p class="label">商品数（全体）</p><p class="big r" style="color:var(--amber)">224品</p></div>
+</div>
+<p class="note">224品のうち20品で、粗利のほぼ半分。<br>推す商品を絞るほど、現場の声かけは揃えやすい。</p>
+</div></section>
+
+<section id="drinks"><div class="wrap">
+<p class="eyebrow">06　ドリンク</p>
+<h2 class="r">メガにすると、<br>1杯の粗利が1.5〜1.8倍になる</h2>
+<div class="grid g3">
+<div class="card"><h3 class="r">角ハイボール</h3><p>通常 <b>531円</b> → メガ <b>776円</b></p><p class="big r red">＋245円<span class="unit">/杯</span></p><p class="label">今のメガ比率：36%</p></div>
+<div class="card"><h3 class="r">酒場レモンサワー</h3><p>通常 <b>471円</b> → メガ <b>860円</b></p><p class="big r red">＋389円<span class="unit">/杯</span></p><p class="label">今のメガ比率：28%</p></div>
+<div class="card k"><h3 class="r">生ビール（プレモル）</h3><p style="color:var(--soft)">13,148杯で粗利額は1位。<br>ただし粗利率は62%。</p><p style="color:var(--amber);margin-top:8px">2杯目以降は、<br>サワー・ハイボールを提案。</p></div>
+</div>
+<div class="todo"><b>やること：</b>「メガにしますか？」を、注文時の決まり文句にする。</div>
+<p class="note">粗利率：レモンサワー90%・角ハイ84%・生ビール62%。メガ比率＝メガ杯数÷（通常＋メガ）。金額は1杯あたりの粗利。</p>
+</div></section>
+
+<section id="puzzle"><div class="wrap">
+<p class="eyebrow">07　隠れ高粗利</p>
+<h2 class="r">1品の粗利は厚いのに、<br>まだ知られていない</h2>
+<div class="tbl"><table>
+<tr><th>商品</th><th class="n">売価</th><th class="n">1品粗利</th><th class="n">粗利率</th><th class="n">出数</th></tr>
+<tr><td>（ハーフ）海老入りぜいたく海鮮もんじゃ</td><td class="n">3,608円</td><td class="n">2,435円</td><td class="n">68%</td><td class="n">176</td></tr>
+<tr><td>（ハーフ）ぜいたく海鮮もんじゃ</td><td class="n">3,278円</td><td class="n">2,255円</td><td class="n">69%</td><td class="n">240</td></tr>
+<tr><td>国産和牛ステーキ 旨ソース</td><td class="n">3,168円</td><td class="n">2,008円</td><td class="n">63%</td><td class="n">260</td></tr>
+<tr><td>明太もちチーズクリーム</td><td class="n">1,958円</td><td class="n">1,540円</td><td class="n">79%</td><td class="n">270</td></tr>
+<tr><td>ベビーチーズカレー</td><td class="n">1,738円</td><td class="n">1,458円</td><td class="n">84%</td><td class="n">294</td></tr>
+<tr><td>カマンベールアヒージョ</td><td class="n">2,068円</td><td class="n">1,409円</td><td class="n">68%</td><td class="n">277</td></tr>
+</table></div>
+<div class="todo"><b>やること：</b>卓のおすすめ札と、2品目の声かけで推す。<br>ぜいたく海鮮は期間限定。定番化するかも、出数で判断する。</div>
+<p class="note">1品粗利が中央値（858円）以上で、出数が中央値（419）未満のフード。<br>粗利率でなく「1品の粗利額」で見る。</p>
+</div></section>
+
+<section id="horse"><div class="wrap">
+<p class="eyebrow">08　人気だが薄利</p>
+<h2 class="r">よく出る2品は、<br>1回の粗利を上げる余地がある</h2>
+<div class="grid g2">
+<div class="card"><h3 class="r">焼きそば</h3><p>出数 2,286・売価 1,158円・原価 477円</p><p class="big r red">粗利率 58.8%</p><p>主力料理の中で一番低い。<br>原価を50円下げるか、売価を50円上げる。<br>それだけで73日で約11万円の差。</p></div>
+<div class="card"><h3 class="r">特選豚玉</h3><p>出数 4,546・売価 1,078円・1品粗利 754円</p><p class="big r">出数 1位</p><p>入口の1品なので、値段は触らない。<br>もち・チーズのトッピングで、<br>1回あたりの粗利を足す。</p></div>
+</div>
+<p class="note">焼きそばの差額：2,286食×50円＝約11.4万円（9店・73日）。</p>
+</div></section>
+
+<section id="topping"><div class="wrap">
+<p class="eyebrow">09　トッピング・追加注文</p>
+<h2 class="r">推すトッピングと、<br>値付けを見直すトッピング</h2>
+<div class="grid g2">
+<div class="card"><h3 class="r">推す（粗利率が高い）</h3>
+<div class="tbl" style="border:none"><table style="min-width:0">
+<tr><th>トッピング</th><th class="n">回数</th><th class="n">粗利率</th></tr>
+<tr><td>もち</td><td class="n">736</td><td class="n">92%</td></tr>
+<tr><td>明太子</td><td class="n">213</td><td class="n">85%</td></tr>
+<tr><td>イカ</td><td class="n">441</td><td class="n">83%</td></tr>
+<tr><td>チーズ</td><td class="n">2,013</td><td class="n">75%</td></tr>
+</table></div></div>
+<div class="card k"><h3 class="r" style="color:var(--amber)">見直す（粗利率が低い）</h3>
+<div class="tbl" style="border:none;background:transparent"><table style="min-width:0;color:var(--cream)">
+<tr><th style="background:var(--dark2)">トッピング</th><th class="n" style="background:var(--dark2)">回数</th><th class="n" style="background:var(--dark2)">粗利率</th></tr>
+<tr><td style="border-color:#3A342B">ドリンク濃いめ</td><td class="n" style="border-color:#3A342B">894</td><td class="n" style="border-color:#3A342B">37%</td></tr>
+<tr><td style="border-color:#3A342B">カマンベール</td><td class="n" style="border-color:#3A342B">179</td><td class="n" style="border-color:#3A342B">41%</td></tr>
+</table></div>
+<p style="color:var(--soft);margin-top:10px">濃いめは、追加料金に対して<br>お酒の原価が重い。<br>価格の見直し候補。</p></div>
+</div>
+<div class="todo"><b>やること：</b>もんじゃ・お好み焼きには「もち追加」を最初に勧める。</div>
+<p class="note">原価が登録されている有料トッピングのみ。回数は9店・73日の合計。</p>
+</div></section>
+
+<section id="impact"><div class="wrap">
+<p class="eyebrow">10　効果の試算</p>
+<h2 class="r">3つで、9店合計<br>月およそ27万円の粗利増</h2>
+<div class="tbl"><table>
+<tr><th>打ち手</th><th>前提</th><th class="n">粗利増／月</th></tr>
+<tr><td>ドリンクのメガ化</td><td>通常注文の1割をメガに（角ハイ・レモンサワー）</td><td class="n">約10.7万円</td></tr>
+<tr><td>隠れ高粗利を推す</td><td>上の6品の出数を1割増やす</td><td class="n">約11.2万円</td></tr>
+<tr><td>焼きそばの手直し</td><td>原価−50円、または売価＋50円</td><td class="n">約4.7万円</td></tr>
+<tr class="sum"><td>合計</td><td>年間にすると約320万円</td><td class="n">約26.6万円</td></tr>
+</table></div>
+<p style="margin-top:20px">73日の実績を、30日換算した数字。<br>推した商品が他の注文を置き換える分は、引いていない。</p>
+<p class="note">メガ化：角ハイ452杯×245円＋レモン384杯×389円。隠れ高粗利：6品の粗利272.6万円×10%。<br>焼きそば：2,286食×50円。いずれも73日分→×30/73。</p>
+</div></section>
+
+<section id="next" class="dark"><div class="wrap">
+<p class="eyebrow">11　次の一手</p>
+<h2 class="r">数字の精度を上げて、毎月まわす</h2>
+<div class="grid g2">
+<div class="card d"><h3 class="r">原価マスタを揃える</h3><p style="color:var(--soft)">向ヶ丘遊園・登戸は原価が未登録。<br>本部店にも原価0円の商品が一部ある。</p></div>
+<div class="card d"><h3 class="r">欠けた期間を補う</h3><p style="color:var(--soft)">9/13〜10/11はログイン切れで未取得。<br>補えば、秋メニューの動きも見える。</p></div>
+<div class="card d"><h3 class="r">店ごとに推す商品を決める</h3><p style="color:var(--soft)">同じ4象限を、店舗別に月1回出す。<br>店長会で「今月推す3品」を決める。</p></div>
+<div class="card d"><h3 class="r">実際の原価率と照合する</h3><p style="color:var(--soft)">登録原価の粗利率は76%。<br>仕入れ実績と比べて、ロスの大きさを測る。</p></div>
+</div>
+</div></section>
+
+<footer><div class="wrap">株式会社うまプロ／事業開発本部　｜　社内確認用資料（外部への転送はご遠慮ください）</div></footer>
+</body>
+</html>
