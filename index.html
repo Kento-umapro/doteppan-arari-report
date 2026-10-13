@@ -189,6 +189,17 @@ tr.sum td{background:var(--yellow);font-weight:700;border-top:2px solid var(--in
 .photo-band{height:46vh;min-height:300px;background-size:cover;background-position:center;border-bottom:2px solid var(--ink);position:relative}
 .photo-band::after{content:attr(data-cap);position:absolute;left:24px;bottom:20px;font-family:var(--ff-mono);font-size:11px;letter-spacing:.12em;background:var(--ink);color:var(--paper);padding:6px 12px;border-radius:4px}
 
+@media(max-width:720px){
+  .head-meta{text-align:left}
+  table{min-width:0}
+  th,td{padding:12px 10px;font-size:13px}
+  th{font-size:11px;letter-spacing:.04em}
+  .sm-hide{display:none}
+  .tbl{border-radius:18px}
+  .card{padding:28px 22px 32px}
+  .todo{flex-direction:column;gap:10px;padding:20px}
+  .todo p{font-size:16px}
+}
 /* footer */
 footer{background:var(--ink);color:var(--paper);padding:56px 0 40px}
 footer .fwrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;align-items:flex-end}
@@ -246,7 +257,7 @@ footer small{font-family:var(--ff-mono);font-size:11px;letter-spacing:.1em;opaci
   <div class="container">
     <span class="eyebrow reveal">Gross Profit Report — 2026.10</span>
     <h1 class="reveal">粗利で、<br><span class="yellow">推す商品</span>を<br>決める。</h1>
-    <p class="hero-sub reveal">どてっぱん9店・73日分の出数と、<br>Diniiに登録された原価から、<br>商品ごとの粗利を出しました。<br>「もっと売るべき商品」と、その打ち手をまとめています。</p>
+    <p class="hero-sub reveal">どてっぱん9店・73日分の出数と、<br>Diniiに登録された原価から、<br>商品ごとの粗利を出しました。<br>「もっと売るべき商品」と、<br>その打ち手をまとめています。</p>
     <div class="hero-ctas reveal">
       <a class="btn red" href="#conclusion">結論を見る <span class="arrow">↓</span></a>
       <a class="btn alt" href="#impact">効果試算へ <span class="arrow">→</span></a>
@@ -285,7 +296,7 @@ footer small{font-family:var(--ff-mono);font-size:11px;letter-spacing:.1em;opaci
 <section class="section-pad dark" id="conclusion">
   <div class="container">
     <div class="section-head reveal">
-      <div><span class="eyebrow">02 / Conclusion</span><h2>粗利を伸ばす打ち手は、<span class="red">3つ。</span></h2></div>
+      <div><span class="eyebrow">02 / Conclusion</span><h2>粗利を伸ばす打ち手は、<span class="red" style="white-space:nowrap">3つ。</span></h2></div>
     </div>
     <div class="dcards">
       <div class="dcard reveal"><div class="n">01</div><h3>ドリンクを<br>「メガ」へ</h3><p>角ハイ・レモンサワーは、<br>メガにすると1杯の粗利が<br>245〜389円増える。</p><span class="amt">月 約10.7万円</span></div>
@@ -325,14 +336,14 @@ footer small{font-family:var(--ff-mono);font-size:11px;letter-spacing:.1em;opaci
       <div class="head-meta">9店・73日の合計。<br>売価・原価は期間中の平均（税込）。</div>
     </div>
     <div class="tbl reveal"><div class="tbl-scroll"><table>
-      <thead><tr><th>商品</th><th class="n">出数</th><th class="n">売価</th><th class="n">1品粗利</th><th class="n">粗利率</th><th class="n">粗利額</th></tr></thead>
+      <thead><tr><th>商品</th><th class="n">出数</th><th class="n sm-hide">売価</th><th class="n">1品粗利</th><th class="n sm-hide">粗利率</th><th class="n">粗利額</th></tr></thead>
       <tbody>
-      <tr><td>ど定番明太もちチーズベビースター</td><td class="n">3,658</td><td class="n">2,068円</td><td class="n">1,700円</td><td class="n">82%</td><td class="n em">622万円</td></tr>
-      <tr><td>（ハーフ）ど定番明太もちチーズ</td><td class="n">3,441</td><td class="n">1,298円</td><td class="n">1,082円</td><td class="n">83%</td><td class="n em">372万円</td></tr>
-      <tr><td>海鮮スペシャル玉</td><td class="n">1,128</td><td class="n">1,801円</td><td class="n">1,295円</td><td class="n">72%</td><td class="n em">146万円</td></tr>
-      <tr><td>（ハーフ）イカ墨クリームリゾット</td><td class="n">1,272</td><td class="n">1,408円</td><td class="n">1,117円</td><td class="n">79%</td><td class="n em">142万円</td></tr>
-      <tr><td>明太もちチーズ</td><td class="n">848</td><td class="n">1,958円</td><td class="n">1,615円</td><td class="n">83%</td><td class="n em">137万円</td></tr>
-      <tr><td>（ハーフ）岩のりクリーム</td><td class="n">1,479</td><td class="n">1,298円</td><td class="n">924円</td><td class="n">71%</td><td class="n em">137万円</td></tr>
+      <tr><td>ど定番明太もちチーズベビースター</td><td class="n">3,658</td><td class="n sm-hide">2,068円</td><td class="n">1,700円</td><td class="n sm-hide">82%</td><td class="n em">622万円</td></tr>
+      <tr><td>（ハーフ）ど定番明太もちチーズ</td><td class="n">3,441</td><td class="n sm-hide">1,298円</td><td class="n">1,082円</td><td class="n sm-hide">83%</td><td class="n em">372万円</td></tr>
+      <tr><td>海鮮スペシャル玉</td><td class="n">1,128</td><td class="n sm-hide">1,801円</td><td class="n">1,295円</td><td class="n sm-hide">72%</td><td class="n em">146万円</td></tr>
+      <tr><td>（ハーフ）イカ墨クリームリゾット</td><td class="n">1,272</td><td class="n sm-hide">1,408円</td><td class="n">1,117円</td><td class="n sm-hide">79%</td><td class="n em">142万円</td></tr>
+      <tr><td>明太もちチーズ</td><td class="n">848</td><td class="n sm-hide">1,958円</td><td class="n">1,615円</td><td class="n sm-hide">83%</td><td class="n em">137万円</td></tr>
+      <tr><td>（ハーフ）岩のりクリーム</td><td class="n">1,479</td><td class="n sm-hide">1,298円</td><td class="n">924円</td><td class="n sm-hide">71%</td><td class="n em">137万円</td></tr>
       </tbody>
     </table></div></div>
     <div class="todo reveal"><span class="lbl">TO DO</span><p>この6品は、品切れ・提供遅れを絶対に出さない。<br>仕込みの優先順位を一番上に置く。</p></div>
@@ -381,14 +392,14 @@ footer small{font-family:var(--ff-mono);font-size:11px;letter-spacing:.1em;opaci
       <div class="head-meta">1品粗利が中央値（858円）以上で、<br>出数が中央値（419）未満のフード。</div>
     </div>
     <div class="tbl reveal"><div class="tbl-scroll"><table>
-      <thead><tr><th>商品</th><th class="n">売価</th><th class="n">1品粗利</th><th class="n">粗利率</th><th class="n">出数</th></tr></thead>
+      <thead><tr><th>商品</th><th class="n sm-hide">売価</th><th class="n">1品粗利</th><th class="n sm-hide">粗利率</th><th class="n">出数</th></tr></thead>
       <tbody>
-      <tr><td>（ハーフ）海老入りぜいたく海鮮もんじゃ</td><td class="n">3,608円</td><td class="n em">2,435円</td><td class="n">68%</td><td class="n">176</td></tr>
-      <tr><td>（ハーフ）ぜいたく海鮮もんじゃ</td><td class="n">3,278円</td><td class="n em">2,255円</td><td class="n">69%</td><td class="n">240</td></tr>
-      <tr><td>国産和牛ステーキ 旨ソース</td><td class="n">3,168円</td><td class="n em">2,008円</td><td class="n">63%</td><td class="n">260</td></tr>
-      <tr><td>明太もちチーズクリーム</td><td class="n">1,958円</td><td class="n em">1,540円</td><td class="n">79%</td><td class="n">270</td></tr>
-      <tr><td>ベビーチーズカレー</td><td class="n">1,738円</td><td class="n em">1,458円</td><td class="n">84%</td><td class="n">294</td></tr>
-      <tr><td>カマンベールアヒージョ</td><td class="n">2,068円</td><td class="n em">1,409円</td><td class="n">68%</td><td class="n">277</td></tr>
+      <tr><td>（ハーフ）海老入りぜいたく海鮮もんじゃ</td><td class="n sm-hide">3,608円</td><td class="n em">2,435円</td><td class="n sm-hide">68%</td><td class="n">176</td></tr>
+      <tr><td>（ハーフ）ぜいたく海鮮もんじゃ</td><td class="n sm-hide">3,278円</td><td class="n em">2,255円</td><td class="n sm-hide">69%</td><td class="n">240</td></tr>
+      <tr><td>国産和牛ステーキ 旨ソース</td><td class="n sm-hide">3,168円</td><td class="n em">2,008円</td><td class="n sm-hide">63%</td><td class="n">260</td></tr>
+      <tr><td>明太もちチーズクリーム</td><td class="n sm-hide">1,958円</td><td class="n em">1,540円</td><td class="n sm-hide">79%</td><td class="n">270</td></tr>
+      <tr><td>ベビーチーズカレー</td><td class="n sm-hide">1,738円</td><td class="n em">1,458円</td><td class="n sm-hide">84%</td><td class="n">294</td></tr>
+      <tr><td>カマンベールアヒージョ</td><td class="n sm-hide">2,068円</td><td class="n em">1,409円</td><td class="n sm-hide">68%</td><td class="n">277</td></tr>
       </tbody>
     </table></div></div>
     <div class="todo reveal"><span class="lbl">TO DO</span><p>卓のおすすめ札と、2品目の声かけで推す。<br>ぜいたく海鮮は期間限定。定番化するかも、出数で判断する。</p></div>
@@ -416,7 +427,7 @@ footer small{font-family:var(--ff-mono);font-size:11px;letter-spacing:.1em;opaci
       <div><span class="eyebrow">09 / Toppings</span><h2>推すトッピングと、<br><span class="red">値付けを見直す</span>トッピング。</h2></div>
       <div class="head-meta">原価が登録されている有料トッピングのみ。<br>回数は9店・73日の合計。</div>
     </div>
-    <div class="cards two reveal" style="grid-template-columns:1fr 1fr">
+    <div class="cards two reveal">
       <div class="card" style="padding:0;border-right:2px solid var(--ink)">
         <div style="padding:28px 28px 8px"><span class="tag y">推す</span><h3>粗利率が高い</h3></div>
         <table style="min-width:0"><thead><tr><th>トッピング</th><th class="n">回数</th><th class="n">粗利率</th></tr></thead><tbody>
